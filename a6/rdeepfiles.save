@@ -1,0 +1,29 @@
+#! /bin/bash
+
+if [ "$#" -eq 0 ]
+then
+	directory=*
+else
+	directory=$@
+fi
+
+
+
+for file in $directory
+do
+	if [ -d "$file" ]
+	then
+		newDirectory="${file}/*"
+
+		$0 $newDirectory
+
+		echo $newDirectory: $inc
+		((depth=$depth+$inc))
+		inc=0
+	elif [ -f "$file" ]
+	then
+		realpath $file
+	fi
+done
+
+exit $depth
