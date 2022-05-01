@@ -5,6 +5,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <sys/ipc.h>
+#include <sys/msg.h>
 
 #define MAX_WORDS 100000
 #define MAX_LINE 500
