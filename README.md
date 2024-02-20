@@ -1,5 +1,5 @@
 # UnixPortfolio
-A portfolio of projects I did for CS3377 C/C++ Programming in a UNIX Environment at UTD.
+A portfolio of projects I did for CS3377 C/C++ Programming in a UNIX Environment at UTD under Professor Veerasamy.
 
 ## Assignments
 
